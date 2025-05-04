@@ -42,7 +42,7 @@ datasource db {
 }
 ```
 
-exemple de connexion ves BGG:
+exemple de connexion ves BDD:
 ```bash
 datasource db {
   provider = "mysql"
