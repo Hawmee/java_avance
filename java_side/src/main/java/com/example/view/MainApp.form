@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.example.controller.MainApp">
+  <grid id="27dc6" binding="mainWindow" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="99" y="40" width="699" height="556"/>
+    </constraints>
+    <properties>
+      <enabled value="false"/>
+      <preferredSize width="1000" height="600"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="efa1d" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="West"/>
+        <properties>
+          <background color="-2038561"/>
+          <maximumSize width="250" height="0"/>
+          <minimumSize width="50" height="0"/>
+          <preferredSize width="200" height="0"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="fdf3e" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="North"/>
+            <properties>
+              <preferredSize width="0" height="80"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="87a37" class="javax.swing.JSeparator">
+                <constraints border-constraint="South"/>
+                <properties>
+                  <background color="-5591383"/>
+                  <foreground color="-5591383"/>
+                  <preferredSize width="0" height="1"/>
+                  <requestFocusEnabled value="false"/>
+                </properties>
+              </component>
+              <component id="b1436" class="javax.swing.JTextArea" binding="gestionDEnseignantsTextArea" default-binding="true">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <background color="-2038561"/>
+                  <editable value="false"/>
+                  <enabled value="true"/>
+                  <focusable value="false"/>
+                  <font name="Arial Rounded MT Bold" size="12" style="0"/>
+                  <foreground color="-13684689"/>
+                  <margin top="30" left="35" bottom="30" right="0"/>
+                  <text value="Gestion d'Enseignants"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="bfd89" layout-manager="BorderLayout" hgap="0" vgap="4">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-2038561"/>
+              <preferredSize width="152" height="90"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="44777" class="javax.swing.JButton" binding="enseignantsButton" default-binding="true">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <background color="-10906706"/>
+                  <borderPainted value="true"/>
+                  <focusPainted value="false"/>
+                  <focusable value="false"/>
+                  <foreground color="-1"/>
+                  <preferredSize width="99" height="45"/>
+                  <requestFocusEnabled value="true"/>
+                  <rolloverEnabled value="true"/>
+                  <selected value="true"/>
+                  <text value="Enseignants"/>
+                </properties>
+              </component>
+              <grid id="e0e2b" layout-manager="BorderLayout" hgap="0" vgap="4">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <background color="-2038561"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="ba605" class="javax.swing.JButton" binding="sallesButton" default-binding="true">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <background color="-10906706"/>
+                      <focusPainted value="false"/>
+                      <focusable value="false"/>
+                      <foreground color="-1"/>
+                      <preferredSize width="78" height="45"/>
+                      <selected value="true"/>
+                      <text value="Chart"/>
+                    </properties>
+                  </component>
+                  <grid id="3ac21" layout-manager="BorderLayout" hgap="0" vgap="4">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <background color="-2038561"/>
+                    </properties>
+                    <border type="none"/>
+                    <children/>
+                  </grid>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="74362" binding="MainPages" layout-manager="CardLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-1"/>
+          <enabled value="true"/>
+          <focusable value="false"/>
+          <foreground color="-13684689"/>
+          <name value="MainPages"/>
+          <preferredSize width="0" height="50"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="1e2e8" binding="pageEnseignants" layout-manager="CardLayout" hgap="0" vgap="0">
+            <constraints>
+              <card name="Card1"/>
+            </constraints>
+            <properties>
+              <background color="-262150"/>
+              <foreground color="-13684689"/>
+              <name value="pageEnseignants"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="93959" binding="ajoutEnseignants" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <card name="Card1"/>
+                </constraints>
+                <properties>
+                  <background color="-262150"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <grid id="939e1" binding="ajoutEnsTitle" layout-manager="BorderLayout" hgap="0" vgap="0">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <background color="-262150"/>
+                      <foreground color="-13684689"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="a1b2f" class="javax.swing.JTextArea" binding="enseignantsAjoutTextArea" default-binding="true">
+                        <constraints border-constraint="Center"/>
+                        <properties>
+                          <background color="-262150"/>
+                          <font name="Arial Rounded MT Bold" size="14" style="0"/>
+                          <foreground color="-13684689"/>
+                          <margin top="12" left="12" bottom="12" right="12"/>
+                          <text value="Enseignants &gt; Ajout"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="2a6ea" binding="ajoutEnsContent" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="73d68" binding="ensFormContainer" layout-manager="GridBagLayout">
+                        <constraints/>
+                        <properties/>
+                        <border type="none"/>
+                        <children/>
+                      </grid>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="193a" binding="modifEnseignants" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <card name="Card2"/>
+                </constraints>
+                <properties>
+                  <background color="-1533777"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="a76a6" binding="suppEnseignants" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <card name="Card3"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="13619" binding="mainEnseignants" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <card name="Card4"/>
+                </constraints>
+                <properties>
+                  <background color="-13684689"/>
+                  <foreground color="-13684689"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+            </children>
+          </grid>
+          <grid id="b7d5f" binding="pageChart" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <card name="Card2"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+  <inspectionSuppressions>
+    <suppress inspection="NoLabelFor" id="5ad26"/>
+  </inspectionSuppressions>
+</form>
