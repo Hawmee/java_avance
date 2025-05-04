@@ -46,13 +46,15 @@ public class MainApp extends JFrame {
 
 
         MainPages.add("enseignants" , pageEnseignants);
-        Chart chart = new Chart();
-        MainPages.add("chart" , chart);
+        MainPages.add("chart" , pageChart);
 
+        Chart chart = new Chart();
         mainEnseignants = new MainEnseignants(pageEnseignants , chart);
 
 
+
         pageEnseignants.add("mainEnseignants" , mainEnseignants);
+        pageChart.add(chart);
 
 
         CardLayout enseignantsLayout = (CardLayout) pageEnseignants.getLayout();

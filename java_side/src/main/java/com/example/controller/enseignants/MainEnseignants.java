@@ -105,8 +105,10 @@ public class MainEnseignants extends JPanel {
         content.add(tableScrollPane, BorderLayout.CENTER);
 
 
+//        this.chart.loadData();
         loadProfs();
-        this.chart.loadData();
+        revalidate();
+        repaint();
 
         add(header, BorderLayout.NORTH);
         add(content, BorderLayout.CENTER);
